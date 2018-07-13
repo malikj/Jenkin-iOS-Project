@@ -12,7 +12,18 @@
 		9606F84C20F8ACCA00B5150A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606F84A20F8ACCA00B5150A /* Main.storyboard */; };
 		9606F84E20F8ACD700B5150A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9606F84D20F8ACD700B5150A /* Assets.xcassets */; };
 		9606F85120F8ACD700B5150A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606F84F20F8ACD700B5150A /* LaunchScreen.storyboard */; };
+		9606F85F20F8B3A800B5150A /* Demo_JenkinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606F85E20F8B3A800B5150A /* Demo_JenkinTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9606F86120F8B3A800B5150A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9606F83B20F8ACCA00B5150A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9606F84220F8ACCA00B5150A;
+			remoteInfo = "Demo-Jenkin";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9606F84320F8ACCA00B5150A /* Demo-Jenkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Jenkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		9606F84D20F8ACD700B5150A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9606F85020F8ACD700B5150A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9606F85220F8ACD700B5150A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9606F85C20F8B3A800B5150A /* Demo-JenkinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo-JenkinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9606F85E20F8B3A800B5150A /* Demo_JenkinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_JenkinTests.swift; sourceTree = "<group>"; };
+		9606F86020F8B3A800B5150A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9606F84020F8ACCA00B5150A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9606F85920F8B3A800B5150A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9606F84520F8ACCA00B5150A /* Demo-Jenkin */,
+				9606F85D20F8B3A800B5150A /* Demo-JenkinTests */,
 				9606F84420F8ACCA00B5150A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9606F84320F8ACCA00B5150A /* Demo-Jenkin.app */,
+				9606F85C20F8B3A800B5150A /* Demo-JenkinTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				9606F85220F8ACD700B5150A /* Info.plist */,
 			);
 			path = "Demo-Jenkin";
+			sourceTree = "<group>";
+		};
+		9606F85D20F8B3A800B5150A /* Demo-JenkinTests */ = {
+			isa = PBXGroup;
+			children = (
+				9606F85E20F8B3A800B5150A /* Demo_JenkinTests.swift */,
+				9606F86020F8B3A800B5150A /* Info.plist */,
+			);
+			path = "Demo-JenkinTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 9606F84320F8ACCA00B5150A /* Demo-Jenkin.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9606F85B20F8B3A800B5150A /* Demo-JenkinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9606F86320F8B3A800B5150A /* Build configuration list for PBXNativeTarget "Demo-JenkinTests" */;
+			buildPhases = (
+				9606F85820F8B3A800B5150A /* Sources */,
+				9606F85920F8B3A800B5150A /* Frameworks */,
+				9606F85A20F8B3A800B5150A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9606F86220F8B3A800B5150A /* PBXTargetDependency */,
+			);
+			name = "Demo-JenkinTests";
+			productName = "Demo-JenkinTests";
+			productReference = 9606F85C20F8B3A800B5150A /* Demo-JenkinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					9606F84220F8ACCA00B5150A = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					9606F85B20F8B3A800B5150A = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9606F84220F8ACCA00B5150A;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				9606F84220F8ACCA00B5150A /* Demo-Jenkin */,
+				9606F85B20F8B3A800B5150A /* Demo-JenkinTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9606F85A20F8B3A800B5150A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9606F85820F8B3A800B5150A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9606F85F20F8B3A800B5150A /* Demo_JenkinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9606F86220F8B3A800B5150A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9606F84220F8ACCA00B5150A /* Demo-Jenkin */;
+			targetProxy = 9606F86120F8B3A800B5150A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9606F84A20F8ACCA00B5150A /* Main.storyboard */ = {
@@ -314,6 +392,44 @@
 			};
 			name = Release;
 		};
+		9606F86420F8B3A800B5150A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Demo-JenkinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Demo-JenkinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo-Jenkin.app/Demo-Jenkin";
+			};
+			name = Debug;
+		};
+		9606F86520F8B3A800B5150A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Demo-JenkinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Demo-JenkinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo-Jenkin.app/Demo-Jenkin";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +447,15 @@
 			buildConfigurations = (
 				9606F85620F8ACD700B5150A /* Debug */,
 				9606F85720F8ACD700B5150A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9606F86320F8B3A800B5150A /* Build configuration list for PBXNativeTarget "Demo-JenkinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9606F86420F8B3A800B5150A /* Debug */,
+				9606F86520F8B3A800B5150A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
